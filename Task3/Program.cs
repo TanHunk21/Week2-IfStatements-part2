@@ -6,25 +6,36 @@ namespace Task3
     {
         static void Main(string[] args)
         {
-            int Age;
-            string UserInput;
 
-            Console.WriteLine("Choose a number between 1-100 ?");
+            Console.WriteLine("What is your first name?");
+            string UserInput = Console.ReadLine();
+            int Num1 = Int32.Parse(UserInput);
+            Console.WriteLine("What is your second name?");
             UserInput = Console.ReadLine();
-            Age = Int32.Parse(UserInput);
+            int Num2 = Int32.Parse(UserInput);
 
-            if (Age < 50)
+            if (Num1 == Num2)
             {
-                Console.WriteLine($"{Age} < 50");
+                Console.WriteLine("The number you provided are equal");
+            }    
+            
+            {
+                Console.WriteLine("The number you provided are not equal");
             }
-            else if (Age > 50)
-            {
-                Console.WriteLine($"{Age} > 50");
-            }
-            else
-            {
-                Console.WriteLine($"Nice {Age}");
-            }else
+            
+
+                
+
+
+
+
+
+                
+            
+            
+
+
+
 
 
 
